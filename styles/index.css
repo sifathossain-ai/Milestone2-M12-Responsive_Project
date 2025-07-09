@@ -277,6 +277,12 @@ footer{
     font-weight: 500;
 }
 
+.foot-des{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+
 /* Responsive Styles */
 
 @media screen and (max-width:576px) {
