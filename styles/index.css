@@ -295,6 +295,14 @@ footer{
         flex-direction: column;
     }
 
+    .navbar{
+        margin-bottom: 100px;
+    }
+
+    .brand-name{
+        margin-bottom: 30px;
+    }
+
     .banner-title{
         font-size: 3rem;
     }
