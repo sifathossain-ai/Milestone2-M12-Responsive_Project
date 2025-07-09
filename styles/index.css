@@ -81,6 +81,23 @@ body{
     color: white;
 }
 
+/* Banner Styles */
+
+.banner{
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+/* .banner-container{
+    width: 520px;
+} */
+
+.banner-title{
+    font-size: 4.85rem;
+    font-weight: 700;
+}
 
 /* Responsive Styles */
 
