@@ -219,6 +219,7 @@ main {
 /* Team Styles */
 .team{
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .team-title{
