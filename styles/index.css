@@ -3,55 +3,64 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Share Styles */
 
-.primary-color{
+.primary-color {
     color: white;
 }
 
-.secondary-color{
+.secondary-color {
     color: #E6533C;
 }
 
-.primary-btn{
+.primary-btn {
     background-color: #E6533C;
     border-radius: 46px;
 }
 
-body{
+body {
     background-color: black;
 }
 
-.display-flex{
+.display-flex {
     display: flex;
 }
 
+.dark2 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+    margin-top: 100px;
+}
 
 /* Navbar Styles */
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
-.navbar{
+
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
 
-.brand-name{
+.brand-name {
     font-size: 2.1rem;
     font-weight: 800;
     font-style: italic;
     color: #E6533C;
 }
 
-.navbar-container{
+.navbar-container {
     gap: 47px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
@@ -61,29 +70,29 @@ body{
 
 }
 
-.navbar-container li{
+.navbar-container li {
     list-style: none;
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-.navbar-container li > a{
+.navbar-container li>a {
     text-decoration: none;
     color: white;
 }
 
-.inner-container{
+.inner-container {
     padding: 8px 20px;
 }
 
-.inner-container > a{
+.inner-container>a {
     text-decoration: none;
     color: white;
 }
 
 /* Banner Styles */
 
-.banner{
+.banner {
     margin-top: 32px;
     justify-content: center;
     align-items: center;
@@ -94,15 +103,166 @@ body{
     width: 520px;
 } */
 
-.banner-title{
+.banner-title {
     font-size: 4.85rem;
     font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.banner-description {
+    margin-bottom: 28px;
+}
+
+.join-btn {
+    padding: 16px 46px;
+    border: none;
+    color: white;
+    margin-right: 14px;
+}
+
+.download-btn {
+    padding: 16px 46px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 46px;
+    background-color: black;
+    color: white;
+}
+
+.btn-property {
+    padding: 20px 50px;
+    color: white;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+#video-tutorial {
+    margin-left: -113px;
+    margin-top: -200px;
+}
+
+#tutorials {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* Main Section Styles */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Habit Styles */
+
+.habits {
+    text-align: center;
+}
+
+.habit-pic-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 58px;
+}
+
+.pic-div {
+    padding: 20px;
+}
+
+.pic-div>img {
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.habit-content-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* Run Styles */
+
+.run{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.run-container{
+    margin-right: 165px;
+}
+
+.run-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.run-btn{
+    color: white;
+    padding: 16px 71px;
+    margin-top: 34px;
+    border: none;
+}
+
+.run-pic-container > img {
+    width: 366px;
+    height: auto;
+    border-radius: 18px;
+    width: 100%;
 }
 
 /* Responsive Styles */
 
 @media screen and (max-width:576px) {
-    .navbar{
+
+    body{
+        padding: 20px;
+    }
+    .navbar,
+    .banner {
         flex-direction: column;
+    }
+
+    .banner-title{
+        font-size: 3rem;
+    }
+
+    .join-btn, .download-btn{
+        padding: 16px 39px;
+    }
+
+    .navbar-container{
+        gap: 30px;
+    }
+
+    .main-btn {
+        text-align: center;
+    }
+
+    #video-tutorial {
+        margin-left: 150px;
+        margin-top: -200px;
+    }
+
+    .habit-pic-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .run{
+        flex-direction: column;
+    }
+    .run-container{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .run-btn{
+        text-align: center;
+        width: 100%;
     }
 }
