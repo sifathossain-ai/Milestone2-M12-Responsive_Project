@@ -23,9 +23,47 @@ body{
     background-color: black;
 }
 
+.display-flex{
+    display: flex;
+}
+
 /* Navbar Styles */
 
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container{
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar-container li{
+    list-style: none;
+}
+
+.navbar-container li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.inner-container > a{
+    text-decoration: none;
+    color: white;
+}
+
+.inner-container{
+    background-color: #E6533C;
+    padding: 8px 20px;
+    border-radius: 46px;
 }
